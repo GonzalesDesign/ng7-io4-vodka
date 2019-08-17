@@ -1,0 +1,67 @@
+
+/*--=| shared theme |=--*/
+@import './../../../../../theme/shared-styles.scss';
+
+div.card-intro-bg-trans-box {
+	// margin: 30px;
+	// height: calc(100% + 10vh);
+	// min-height: 30vh;
+	background-color: var(--ion-color-primary-shade);
+	border: 0px solid black;
+	opacity: 0.9;
+	filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.back-button {
+ color: var(--ion-color-light);
+}
+.recipe-button {
+	@include fontFamilyWeightSize($fontOpenSans, 400, 12px, var(--ion-color-warning-shade));
+	letter-spacing: 2px;
+}
+.card-cocktail-image {
+    align-self: center;
+	width: 100%;
+	height: 65%;
+	padding: 20px;
+	// margin: 20px;
+	// object-fit: cover;
+	background-color: var(--ion-color-medium-shade);
+	border-radius: 4px;
+	border: 0px solid yellowgreen;
+}
+.cocktails-intro-card-title {
+	@include fontFamilyWeightSize($fontMerriweather, 400, 2.5em, var(--ion-color-warning-shade));
+	@media screen and (max-width: 800px) {
+		font-size: calc(2.5em + 1vw);
+	}
+	text-align: center;
+	border: 0px solid grey;
+}
+.cocktails-intro-card-subtitle {
+	@include fontFamilyWeightSize($fontOpenSans, 600, 1.5em, var(--ion-color-light-shade));
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid grey;
+}
+.cocktails-card-title {
+	@include fontFamilyWeightSize($fontMerriweather, 400, 1.6em, var(--ion-color-success-tint2));
+	@media screen and (max-width: 800px) {
+		font-size: calc(1.6em + 1vw);
+	}
+	color: var(--ion-color-success-tint2);
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid red;
+}
+.cocktails-card-subtitle {
+	@include fontFamilyWeightSize($fontOpenSans, 600, 1.2em, var(--ion-color-light-shade));
+	text-align: center;
+	border: 0px solid grey;
+	margin: 0 0 0 0;
+}
+.card-intro-paragraph {
+	font-size: 1.2em;
+}

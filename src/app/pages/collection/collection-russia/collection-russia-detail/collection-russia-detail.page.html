@@ -1,0 +1,44 @@
+<!--=| DETAIL TEMPLATE |=-->
+
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{titolo}} : Cocktails </ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col size-sm="10" offset-sm="1">
+
+				<ion-card padding *ngFor="let cocktail of aCocktailsData;">
+					<!-- <ion-card padding *ngFor="let loaded of information;"> -->
+					<!-- <ion-card padding> -->
+
+					<ion-img [src]="cocktail.imageUrl"></ion-img>
+
+					<ion-tab-button [routerLink]="['./', cocktail.id]">
+						<ion-icon name="calendar"></ion-icon>
+					</ion-tab-button>
+					<!-- <ion-header> -->
+					<ion-card-title>
+						<h2>{{cocktail.title}}</h2>
+					</ion-card-title>
+					<!-- <ion-card-subtitle><h3>{{cocktail.model}}</h3></ion-card-subtitle> -->
+					<!-- </ion-header> -->
+
+					<!-- <ion-card-content> -->
+					<p>{{cocktail.description}}</p>
+					<!-- </ion-card-content> -->
+
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

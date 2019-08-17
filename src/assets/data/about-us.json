@@ -1,0 +1,36 @@
+[
+	{
+		"mainFeature": "• Our Feature Brand •",
+		"mainFeatureTitle": "SE BUSCA™ MEZCAL",
+		"mainFeatureSubTitle": "OUR HEARTS BEAT FOR A REVOLUTION",
+		"mainFeatureImageUrl": "./../../../assets/images/sebusca-cocktails/SeBuscaHeart.jpg",
+		"mainFeatureLinkUrl": "/side-menu/collection/collection-mexico",
+		"mainFeatureInfo": "Busca™ which means ‘wanted’ in Spanish is a tribute to the brave women of the Mexican Revolution who stood shoulder to shoulder with men in battle for a new constitution.",
+		"content": [
+			{
+				"featuredTitle": "ANNOUNCING:",
+				"contentTitle": "Absolut Unique",
+				"contentSubTitle": "OUR ELEGANT SIGNATURE BRANDS",
+				"contentLinkUrl": "/side-menu/collection/collection-mexico",
+				"contentImageUrl": "./../../../../assets/images/Unique.png",
+				"contentInfo": "Busca™ which means ‘wanted’ in Spanish is a tribute to the brave women of the Mexican Revolution who stood shoulder to shoulder with men in battle for a new constitution."
+			},
+			{
+				"featuredTitle": "THE ORIGINAL:",
+				"contentTitle": "Ruskova",
+				"contentSubTitle": "FROM RUSSIA WITH LOVE",
+				"contentLinkUrl": "/side-menu/collection/collection-russia",
+				"contentImageUrl": "./../../../../assets/images/Ruskova2.png",
+				"contentInfo": "Ruskova which means ‘wanted’ in Spanish is a tribute to the brave women of the Mexican Revolution who stood shoulder to shoulder with men in battle for a new constitution."
+			},
+			{
+				"featuredTitle": "COMING SOON!",
+				"contentTitle": "Gift Baskets",
+				"contentSubTitle": "FOR THAT SPECIAL SOMEONE",
+				"contentLinkUrl": "/side-menu/gifts",
+				"contentImageUrl": "./../../../../assets/images/Vodka-Baskets/Basket-Ketel.png",
+				"contentInfo": "Baskets which means ‘wanted’ in Spanish is a tribute to the brave women of the Mexican Revolution who stood shoulder to shoulder with men in battle for a new constitution."
+			}
+		]
+	}
+]

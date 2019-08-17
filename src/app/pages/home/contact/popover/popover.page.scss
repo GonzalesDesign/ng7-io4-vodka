@@ -1,0 +1,89 @@
+/*--=| email theme |=--*/
+@import './../../../../../theme/email-styles.scss';
+
+ion-fab {
+    border: 0px solid grey;
+    left: calc((320px - 90px)/2) ;
+    // left: 125px;
+    margin-left: 0px;
+    // width: 90px;
+    // height: 90px;
+
+    ion-fab-button {
+        border: 0px solid grey;
+    }
+}
+
+.content-container {
+	height: max-content;//calc(max-content + 50px); // 510px;
+	margin: 0px;
+    padding: 0px;
+    --background: rgba(0, 0, 0, .25);
+    // --background: linear-gradient(180deg,var(--ion-color-primary), var(--ion-color-primaryMid));
+	border: 0px solid purple;
+}
+
+.form-main-grid {
+    margin-bottom: 20px;
+}
+
+.mdf3-card {
+	height: 100%;
+	margin: 10px 5px 20px 5px;
+    padding: 0px;
+	--background: white; // var(--ion-color-primary);
+	border: 0px solid orange;
+}
+
+.form-card-header {
+	margin-top: 20px;
+	padding: 0px;
+	border: 0px solid purple;
+}
+
+.form-card-title {
+	@include fontFamilyWeightSize($fontMerriweather, 500, 1.8em, var(--ion-color-primary));
+	border: 0px solid orange;
+}
+
+.form-card-subtitle {
+	@include fontFamilyWeightSize($fontOpenSans, 500, 1.2em, var(--ion-color-danger-tint));
+	padding: 0px;
+	margin: 0px;
+	border: 0px solid orange;
+}
+
+.title-label {
+	@include fontFamilyWeightSize($fontMerriweather, 500, 1em, var(--ion-color-medium));
+	// color: grey;
+}
+
+.validation-message {
+	@include fontFamilyWeightSize($fontMerriweather, 500, .9em, var(--ion-color-tertiary));
+}
+
+.error-messages {
+	@include fontFamilyWeightSize($fontMerriweather, 500, .9em, var(--ion-color-tertiary));
+	padding: 5px 0 0 16px;
+}
+
+.text-input {
+	@include fontFamilyWeightSize($fontMerriweather, 500, .9em, var(--ion-color-dark));
+}
+
+// .card-popover {
+//     --width: 400px;
+// }
+// .popover-wrapper {
+//     --width: 400px;
+// }
+// .popover-content {
+//     width: 400px;
+// }
+
+/*--=| variables.scss |=--*/
+// :root {
+//     ion-popover {
+//         --width: 400px;
+//     }
+// }

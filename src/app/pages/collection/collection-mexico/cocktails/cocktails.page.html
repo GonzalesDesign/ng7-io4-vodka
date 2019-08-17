@@ -1,0 +1,66 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button ></ion-menu-button>
+			<ion-back-button defaultHref="/" class="back-button"></ion-back-button>
+		</ion-buttons>
+		<ion-title class="toolbar-title" *ngIf="cocktailsMediaQuery.hideOnSmallScreen">
+			{{ cocktailTitle }} : Cocktails
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-grid fixedX class="gradBackground">
+		<ion-row>
+
+			<!--===| COCKTAILS INTRO CARD |===-->
+			<ion-col size="12">
+					<ion-card class="card-bg-introX">
+						<div class="card-intro-bg-trans-box">
+							<ion-card-header>
+								<ion-card-title class="card-intro-textX cocktails-intro-card-title"
+									[style.fontSize.px]="cocktailsMediaQuery.cardTitleFontSize">
+									{{ collectionMotto }}
+								</ion-card-title>
+								<ion-card-subtitle class="cocktails-intro-card-subtitle"
+									[style.fontSize.px]="cocktailsMediaQuery.cardSubTitleFontSize">
+									{{ collectionBrand }}
+								</ion-card-subtitle>
+							</ion-card-header>
+							<ion-card-content style="color: var(ion-color-light); ">
+								<p class="serif card-intro-paragraph" 
+								style="color: var(--ion-color-light);"
+								[style.fontSize.px]="cocktailsMediaQuery.cardParagFontSize"
+								text-center>
+								{{ collectionDescription }}</p>
+							</ion-card-content>
+						</div>
+					</ion-card>
+				</ion-col>
+
+			<ion-col size-xs="12" offset-xs="0" size-sm="6" offset-sm="0" *ngFor="let cocktails of aCocktails;">	
+				<ion-card class="shared-card-container-grey">
+					<ion-img [src]="cocktails.cocktailImage"  tappable [routerLink]="['./', cocktails.cId]" 
+						class="card-cocktail-image">
+					</ion-img>
+					<ion-card-header>
+						<ion-card-subtitle class="cocktails-card-subtitle"
+							[style.fontSize.px]="cocktailsMediaQuery.cardSubTitleFontSize">
+							{{ cocktailTitle }} {{ cocktails.brandX }}
+						</ion-card-subtitle>
+						<ion-card-title class="cocktails-card-title" 
+							[style.fontSize.px]="cocktailsMediaQuery.cardTitleFontSize">
+							{{ cocktails.cocktail }}
+						</ion-card-title>
+					</ion-card-header>
+					<ion-button [routerLink]="['./', cocktails.cId]" color="medium" class="recipe-button">
+						Click for recipe
+					</ion-button>
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

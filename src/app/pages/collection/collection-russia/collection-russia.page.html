@@ -1,0 +1,91 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			<h3>Collection: Russia</h3>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<!--=| RUSSIAN COLLECTION: INTRO HEADER |=-->
+	<ion-grid no-padding class="intro-header-grid-container">
+		<ion-row no-padding *ngFor="let russianIntro of aRussianIntroData;"
+			style="border: 0px solid red;">
+
+			<ion-col no-padding size-xs="12" size-sm="9" class="intro-header-container">
+				
+				<ion-card class="intro-header-card">
+					<ion-card-header class="intro-header">
+						<ion-card-title text-center class="intro-header-title"
+							[style.fontSize.px]="collectionMediaQuery.introCardTitleFontSize">
+							{{russianIntro.headerTitle}}
+						</ion-card-title>
+						<ion-card-subtitle text-center class="intro-header-subtitle"
+							[style.fontSize.px]="collectionMediaQuery.introCardSubTitleFontSize">
+							{{russianIntro.headerSubTitle}}</ion-card-subtitle>
+						<p *ngIf="collectionMediaQuery.hideOnSmallScreen"
+							text-center class="intro-header-description"
+							[style.fontSize.px]="collectionMediaQuery.introCardParagFontSize">
+							{{russianIntro.headerDescription}}
+						</p>
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+
+			<!-- <div style="color: yellow;">2:{{collectionMediaQuery.hideOnSmallScreen}}</div> -->
+			<ion-col *ngIf="collectionMediaQuery.hideOnSmallScreen"
+				no-padding size-xs="0" size-sm="3">
+				
+				<ion-card no-padding class="intro-header-image-card">
+					<ion-img [src]="russianIntro.headerImageUrl" slot="flex-endX"
+						class="intro-header-image"
+						style="border: 0px solid blue;">
+					</ion-img>
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<!--=| RUSSIAN COLLECTION: COLLECTION |=-->
+	<ion-grid fixedX class="gradBackground">
+		<ion-row>
+			<!-- <ion-col size-sm="10" offset-sm="1" *ngFor="let russian of aCollectionRussia"> -->
+			<ion-col size="6"  *ngFor="let russian of aCocktailsRussia; let i of index;">
+
+				<ion-card class="card-container">
+					<ion-img [src]="russian.imageUrl" tappable [routerLink]="['./', russian.id]"></ion-img>
+					<ion-card-subtitle padding>{{ russian.title }} Collection:</ion-card-subtitle>
+
+					<!-- <ion-buttons slot="start" fill="noneX">
+            <ion-button [routerLink]="['./', russian.id]">
+              Click me
+            </ion-button>
+            <ion-tab-button [routerLink]="['./', russian.id]">
+              <ion-icon slot="start" name="add"></ion-icon>
+              Click me
+            </ion-tab-button>
+          </ion-buttons> -->
+
+					<!-- <ion-tab-button [routerLink]="['./', russian.id]">
+            <ion-icon name="calendar"></ion-icon>
+          </ion-tab-button> -->
+
+					<ion-card-title padding>
+						<h2>{{ russian.title }}</h2>
+					</ion-card-title>
+					<!-- <ion-card-content>
+            <p>{{russian.description}}</p>
+          </ion-card-content> -->
+
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

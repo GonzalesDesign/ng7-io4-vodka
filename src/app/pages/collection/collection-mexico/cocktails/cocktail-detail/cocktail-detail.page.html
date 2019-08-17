@@ -1,0 +1,83 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button defaultHref="/"></ion-back-button>
+		</ion-buttons>
+		<ion-title class="toolbar-title" *ngIf="detailMediaQuery.hideOnSmallScreen">
+				{{ cocktailTitle }} : Cocktail Recipe
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-grid fixed>
+		<ion-row>
+			<ion-col size-sm="12" size-md="8" offset-md="2">
+
+				<ion-card>
+					<ion-card-header>
+						<ion-card-title class="card-recipe-title"
+							[style.fontSize.px]="detailMediaQuery.cardTitleFontSize">
+							{{ cocktailTitle }}
+						</ion-card-title>
+					</ion-card-header>
+
+					<!-- <h3 text-center class="card-recipe-title" 
+              [style.fontSize.px]="detailMediaQuery.cardParagFontSize">
+              {{ cocktailTitle }}</h3> -->
+					<ion-img [src]="cocktailImage" class="card-cocktail-image"></ion-img>
+					<!-- <h4 text-center class="recipe-title">Recipe:</h4> -->
+					<ion-card-subtitle class="recipe-title" 
+						[style.fontSize.px]="detailMediaQuery.cardSubTitleFontSize">
+						Recipe:
+					</ion-card-subtitle>
+
+					<ion-grid fixed>
+						<ion-row *ngFor="let recipe of aRecipes;">
+							<ion-col size="6" text-end class="recipe-ingredient"
+								[style.fontSize.px]="detailMediaQuery.cardParagFontSize">
+								{{ recipe.ingredient }}
+							</ion-col>
+							<ion-col size="6" class="recipe-part"
+								[style.fontSize.px]="detailMediaQuery.cardParagFontSize">
+								{{ recipe.part }}
+							</ion-col>
+						</ion-row>
+						<p text-center class="recipe-instruction multi_lines_text">{{ cocktailRecipeInstruction }}</p>
+					</ion-grid>
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+
+
+	<!-- <ion-card>
+        id: {{id}}
+        details: {{aCocktails[0].cocktail}}
+        <ion-img [src]="aCocktails[0].cocktailImage"
+          style="height:300px;"></ion-img>
+    </ion-card> -->
+
+	<!-- <ion-card *ngFor="let cocktail of aCocktails; let i of index;">
+        id: {{id}}
+        details: {{cocktail.cocktail}}
+    </ion-card> -->
+	<!-- <ion-grid fixedX class="gradBackground">
+      <ion-row>
+        <ion-col size="8" offset="2" *ngFor="let cocktail of details;">
+          <ion-card class="card-container">
+            <ion-img [src]="cocktail.cocktailImage"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>{{ cocktailTitle }} {{ aCollection.brand }}</ion-card-subtitle>
+              <ion-card-title>{{ cocktail.cocktail }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+</ion-content>

@@ -1,0 +1,106 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title class="toolbar-title" *ngIf="aboutMediaQuery.hideOnSmallScreen">
+			About Us
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="about-main-content-container">
+	<!-- style="border: 4px solid rgb(240, 104, 217); --background: aqua;"> -->
+
+	<!--=| ABOUT US: CAROUSEL CARD :  |=-->
+	<app-aboutus-carousel 
+		[titleFontSize]="aboutMediaQuery.carouselTitleFontSize"
+		[subTitleFontSize]="aboutMediaQuery.carouselSubTitleFontSize">
+	</app-aboutus-carousel>
+
+
+	<!--=| ABOUT US: CARDS GRID  |=-->
+	<ion-grid class="grid-content-card-container" 
+		[style.top.px]="aboutMediaQuery.aboutGridYPos" 
+		style="border: 0px solid pink;">
+
+		<!--=| ABOUT US: INTRODUCTION FEATURE CARD |=-->
+		<ion-row class="row-intro-container">
+			<!-- <ion-col size-sm="10" offset-sm="1"> -->
+			<ion-col size-xs="12" offset-xs="0" size-smX="8" offset-smX="2" 
+				class="col-intro-container"
+				*ngFor="let feature of aAboutFeatured;">
+				<!-- *ngFor="let firstContent of aAboutFirstContent; -->
+				<!-- {{firstContent}} -->
+				<ion-card class="sGradBackground-light-success about-us-card">
+					<ion-card-header>
+						<ion-card-title class="feature-title" text-uppercase text-center>
+							{{feature.mainFeature}}
+						</ion-card-title>
+					</ion-card-header>
+					<ion-img src={{feature.mainFeatureImageUrl}} tappable class="col-intro-image"
+						[routerDirection]="'root'" [routerLink]="feature.mainFeatureLinkUrl">
+					</ion-img>
+					<!-- <ion-img src="./../../../../assets/images/SeBusca2.jpg" class="col-intro-image"></ion-img> -->
+					<ion-card-header>
+						<ion-card-title [style.fontSize.px]="aboutMediaQuery.fontSizeFirstCard" 
+							class="about-us-card-title" text-center>
+							{{feature.mainFeatureTitle}}
+						</ion-card-title>
+						<ion-card-subtitle class="about-us-card-subtitle" text-center>
+							{{feature.mainFeatureSubTitle}}
+						</ion-card-subtitle>
+					</ion-card-header>
+					<ion-card-content class="serif">
+						<p class="main-feature-Info serif loose-leading" text-center
+							[style.fontSize.px]="aboutMediaQuery.cardParagFontSize">
+							{{feature.mainFeatureInfo}}
+						</p>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+
+		<!--=| CONTENT MULTIPLE CARDS |=-->
+		<div #rowMultiCardsContainer id="row-multi-cards-container2" 
+			style="border: 0px solid grey; height: 200px;">
+			TEST <br> TEST LINE2
+		</div>
+		<ion-row #rowMultiCardsContainerXXX id="row-multi-cards-container" 
+			class="row-multi-cards-container" 
+			[style.topX.px]="aboutMediaQuery.aboutMultiCardsYPos">
+			<ion-col size-sm="6" size-md="4" *ngFor="let about of aAboutContent;"
+				style="border: 0px solid yellowGreen">
+				<ion-card class="sGradBackground-light-success content-card">
+					<ion-card-header>
+						<ion-card-title class="feature-title" text-center
+							[style.fontSize.px]="aboutMediaQuery.cardSubTitleFontSize">
+							{{about.featuredTitle}}
+						</ion-card-title>
+					</ion-card-header>
+					<ion-img [src]="about.contentImageUrl" class="col-intro-image"
+						[routerDirection]="'root'" [routerLink]="about.contentLinkUrl">
+					</ion-img>
+					<ion-card-header>
+						<ion-card-title class="content-card-title" text-center
+							[style.fontSize.px]="aboutMediaQuery.cardTitleFontSize">
+							{{about.contentTitle}}
+						</ion-card-title>
+						<ion-card-subtitle class="content-card-subtitle" text-center
+							[style.fontSize.px]="aboutMediaQuery.cardSubTitleFontSize">
+							{{about.contentSubTitle}}
+						</ion-card-subtitle>
+					</ion-card-header>
+					<!-- <ion-card-content class="serif">
+						<p class="serif loose-leading"
+							[style.fontSize.px]="aboutMediaQuery.cardParagFontSize">
+							{{about.contentInfo}}
+						</p>
+					</ion-card-content> -->
+				</ion-card>
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
+
+</ion-content>

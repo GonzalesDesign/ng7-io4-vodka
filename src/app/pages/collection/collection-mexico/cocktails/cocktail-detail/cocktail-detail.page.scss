@@ -1,0 +1,48 @@
+
+/*--=| shared theme |=--*/
+@import "./../../../../../../theme/shared-styles.scss";
+
+.card-cocktail-image {
+    align-self: center;
+	width: auto;
+	height: 65%;
+	padding: 20px;
+    margin: 20px;
+	// object-fit: cover;
+	background-color: var(--ion-color-medium-shade);
+	border-radius: 4px;
+	border: 0px solid grey;
+}
+.card-recipe-title {
+    @include fontFamilyWeightSize($fontMerriweather, 400, 1.3em, var(--ion-color-medium-shade));
+    margin-top: 20px;
+    text-align: center;
+    border: 0px solid grey;
+}
+.recipe-title {
+    @include fontFamilyWeightSize($fontMerriweather, 400, 1.3em, var(--ion-color-medium-shade));
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    border: 0px solid grey;
+}
+
+.recipe-ingredient {
+    @include fontFamilyWeightSize($fontMerriweather, 300, 1.2em, var(--ion-color-medium-shade));
+    border-bottom: 1px solid rgb(231, 229, 229);
+}
+
+.recipe-part {
+    @include fontFamilyWeightSize($fontMerriweather, 300, 1.2em, var(--ion-color-medium-shade));
+}
+
+.recipe-instruction {
+    padding: 0 20px 0 20px;
+    font-style: italic;
+    @include fontFamilyWeightSize($fontMerriweather, 300i, 1.1em, var(--ion-color-medium-shade2));
+}
+
+/*--=| Carriage return in textarea |=--*/
+.multi_lines_text {
+    white-space: pre-line;
+} 

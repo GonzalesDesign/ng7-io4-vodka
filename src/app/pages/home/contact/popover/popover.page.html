@@ -1,0 +1,100 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>Email Us:</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content class="content-container ion-no-padding">
+	<ion-grid fixed class="form-main-grid">
+		<ion-row>
+			<ion-col size="12" offset="0">
+
+				<ion-card class="mdf3-card">
+					<!-- <ion-card-header class="form-card-header">
+						<ion-card-title class="form-card-title">Email Us:</ion-card-title>
+						<ion-card-subtitle class="form-card-subtitle">Send us a message.</ion-card-subtitle>
+					</ion-card-header> -->
+
+					<!--=|••••••••••••••••••••••••••••••>|| FORM ||<••••••••••••••••••••••••••••••|=-->
+
+					<form [formGroup]="mdf3Form" (ngSubmit)="onSubmit()">
+
+						<!-------=| FULL NAME |=---------------------->
+						<ion-item>
+							<ion-label position="floating" class="title-label">Name:</ion-label>
+							<!-- <ion-input formControlName="name" [(ngModel)]="emailInterface.name" type="text" class="text-input"></ion-input> -->
+							<ion-input formControlName="name" type="text" class="text-input"></ion-input>
+						</ion-item>
+
+						<div class="error-messages">
+							<ng-container *ngFor="let error of errorMessages.name">
+								<div class="error-message" *ngIf="mdf3Form.get('name').hasError(error.type) && 
+                    (mdf3Form.get('name').dirty || mdf3Form.get('name').touched)">
+									{{ error.message }}
+								</div>
+							</ng-container>
+						</div>
+						<!--=|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|=-->
+
+						<!-------=| EMAIL |=---------------------->
+						<ion-item>
+							<ion-label position="floating" class="title-label">Email:</ion-label>
+							<ion-input formControlName="email" type="text" class="text-input"></ion-input>
+							<!-- <ion-input formControlName="email" [(ngModel)]="emailInterface.email" type="text" class="text-input"></ion-input> -->
+						</ion-item>
+						<div class="error-messages">
+							<ng-container *ngFor="let error of errorMessages.email">
+								<div class="error-message" *ngIf="mdf3Form.get('email').hasError(error.type) && 
+                    (mdf3Form.get('email').dirty || mdf3Form.get('email').touched)">
+									{{ error.message }}
+								</div>
+							</ng-container>
+						</div>
+						<!--=|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|=-->
+
+						<!-------=| PHONE |=---------------------->
+						<ion-item>
+							<ion-label position="floating" class="title-label">Phone:</ion-label>
+							<!-- <ion-input formControlName="phone" [(ngModel)]="emailInterface.phone" type="text" class="text-input"></ion-input> -->
+							<ion-input formControlName="phone" type="text" class="text-input"
+								placeholder="(xxx)xxx-xxxx"></ion-input>
+						</ion-item>
+						<div class="error-messages">
+							<ng-container *ngFor="let error of errorMessages.phone">
+								<div class="error-message" *ngIf="mdf3Form.get('phone').hasError(error.type) && 
+                    (mdf3Form.get('phone').dirty || mdf3Form.get('phone').touched)">
+									{{ error.message }}
+								</div>
+							</ng-container>
+						</div>
+						<!--=|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|=-->
+
+						<!-------=| MESSAGE |=---------------------->
+						<ion-item>
+							<ion-label position="floating" class="title-label">Message:</ion-label>
+							<!-- <ion-textarea formControlName="message" [(ngModel)]="emailInterface.message" rows="3" class="text-input textarea"></ion-textarea> -->
+							<ion-textarea formControlName="message" rows="3" class="text-input textarea"></ion-textarea>
+						</ion-item>
+						<div class="error-messages">
+							<ng-container *ngFor="let error of errorMessages.message">
+								<div class="error-message" *ngIf="mdf3Form.get('message').hasError(error.type) && 
+                    (mdf3Form.get('message').dirty || mdf3Form.get('message').touched)">
+									{{ error.message }}
+								</div>
+							</ng-container>
+						</div>
+
+						<!--=|••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••|=-->
+						<!-------=| SUBMIT BUTTON |=---------------------->
+						<ion-button padding expand="full" size="small" color="tertiary" type="submit"
+							[disabled]="mdf3Form.invalid" [formGroup]="mdf3Form">
+							Submit Email
+						</ion-button>
+					</form>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

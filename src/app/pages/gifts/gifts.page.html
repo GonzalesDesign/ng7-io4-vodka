@@ -1,0 +1,70 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button defaultHref="/" class="back-button" color="light"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			<h3>Gift Baskets</h3>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="gift-basket-content-container">
+	<!--=| GIFT BASKETS HEADER CARD |=-->
+	<ion-card class="gift-basket-header-card" *ngFor="let basketHeader of aGiftBasketsData;">
+		<ion-card-header class="gift-basket-header-container">
+			<ion-card-title text-center class="gift-basket-header-title">{{basketHeader.headerTitle}}</ion-card-title>
+			<ion-card-subtitle text-center class="gift-basket-header-subtitle">{{basketHeader.headerSubTitle}}</ion-card-subtitle>
+			<p text-center class="gift-basket-header-description">{{basketHeader.headerDescription}}</p>
+		</ion-card-header>
+		<ion-img [src]="basketHeader.headerImageUrl"  class="gift-basket-header-image" style="border: 0px solid red;">
+		</ion-img>
+	</ion-card>
+
+	<!--=| GIFT BASKET CARDS |=-->
+	<ion-grid>
+		<ion-row class="gift-basket-row">
+			<ion-col size-xs="12" size-sm="6" size-md="4" *ngFor="let basket of aGiftBasketsData[0].giftBasket;">
+				<ion-card class="gift-basket-card-container">
+					<img [src]="basket.basketImageUrl" tappable class="gift-basket-image">
+					<!-- <ion-img src={{basket.basketImageUrl}} tappable class="gift-basket-image"> -->
+					<!-- <ion-img src="./../../../assets/images/Vodka-Baskets/AbsElyx.jpg" tappable> -->
+						<!-- [routerLink]="['./', basket.id]" class="gift-basket-image" style="border: 0px solid red;"> -->
+					<!-- </img> -->
+					<ion-card-header>
+						<ion-card-subtitle text-center class="gift-basket-subtitle">{{basket.basketSubTitle}}</ion-card-subtitle>
+						<ion-card-title text-center class="gift-basket-title">{{basket.basketTitle}}</ion-card-title>
+					</ion-card-header>
+
+					<ion-card-content>
+						<p>{{basket.basketDescription}}</p>
+						<ion-card-header>
+							<ion-card-title text-center class="gift-basket-price">{{basket.basketPrice}}</ion-card-title>
+						</ion-card-header>
+						<!-- <ion-list>
+							<ion-item class="gift-basket-list-item">
+								<ion-label class="gift-basket-list-label">Pokémon Yellow</ion-label>
+							</ion-item>
+							<ion-item>
+								<ion-label>Mega Man X</ion-label>
+							</ion-item>
+							<ion-item>
+								<ion-label>The Legend of Zelda</ion-label>
+							</ion-item>
+							<ion-item>
+								<ion-label>Pac-Man</ion-label>
+							</ion-item>
+							<ion-item>
+								<ion-label>Super Mario World</ion-label>
+							</ion-item>
+						</ion-list> -->
+					</ion-card-content>
+
+				</ion-card>
+			</ion-col>
+
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

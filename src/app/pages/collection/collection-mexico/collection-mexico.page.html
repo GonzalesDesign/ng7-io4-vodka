@@ -1,0 +1,109 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button defaultHref="/"></ion-back-button>
+		</ion-buttons>
+		<ion-title class="toolbar-title" *ngIf="collectionMediaQuery.hideOnSmallScreen">
+			Vodka Collection: Mexico
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<!--=| MEXICAN COLLECTION: INTRO HEADER |=-->
+	<ion-grid no-padding class="intro-header-grid-container">
+			<ion-row no-padding *ngFor="let mexicanIntro of aMexicanIntroData;"
+				style="border: 0px solid red;">
+	
+				<ion-col no-padding size-xs="12" size-sm="9" class="intro-header-container">
+					
+					<ion-card class="intro-header-card">
+						<ion-card-header class="intro-header">
+							<ion-card-title text-center class="intro-header-title"
+								[style.fontSize.px]="collectionMediaQuery.introCardTitleFontSize">
+								{{mexicanIntro.headerTitle}}
+							</ion-card-title>
+							<ion-card-subtitle text-center class="intro-header-subtitle"
+								[style.fontSize.px]="collectionMediaQuery.introCardSubTitleFontSize">
+								{{mexicanIntro.headerSubTitle}}</ion-card-subtitle>
+							<p *ngIf="collectionMediaQuery.hideOnSmallScreen"
+								text-center class="intro-header-description"
+								[style.fontSize.px]="collectionMediaQuery.introCardParagFontSize">
+								{{mexicanIntro.headerDescription}}
+							</p>
+						</ion-card-header>
+					</ion-card>
+				</ion-col>
+
+				<ion-col *ngIf="collectionMediaQuery.hideOnSmallScreen"
+				no-padding size-xs="0" size-sm="3">
+				
+				<ion-card no-padding class="intro-header-image-card">
+					<ion-img [src]="mexicanIntro.headerImageUrl" slot="flex-endX"
+						class="intro-header-image"
+						style="border: 0px solid blue;">
+					</ion-img>
+				</ion-card>
+
+			</ion-col>
+	<!-- <ion-grid fixedX class="gradBackground">
+		<ion-row>
+			<ion-col size="12">
+				<ion-card class="card-bg-image-intro">
+					<div class="card-intro-bg-trans-box">
+						<ion-card class="collection-card-intro">
+							<ion-card-header>
+								<ion-card-title class="card-intro-text collection-intro-card-title">Mexican Collections</ion-card-title>
+								<ion-card-subtitle class="collection-intro-card-subtitle">Mexican Vodka has a delicious and Latin twist on an old classic.</ion-card-subtitle>
+							</ion-card-header>
+						</ion-card>
+						<ion-card-content style="color: var(ion-color-light); ">
+							<p  *ngIf="collectionMediaQuery.hideOnSmallScreen"
+								class="serif card-intro-paragraph">
+								There's a drink for every mood or occasion. Find your favorite
+								cocktail recipes below. Or think outside the glass and try a brand new drink. Your new
+								favorite could be a shake or stir away. </p>
+						</ion-card-content>
+					</div>
+				</ion-card>
+			</ion-col> -->
+
+			<!--===| COLLECTION CARD |===-->
+			<!-- <ion-col size-xs="6" offset-xs="0" size-md="3" offset-md="0" -->
+			<ion-col size-xs="12" size-sm="6" *ngFor="let cocktails of aCocktails;"
+				style="border: 0px solid yellowGreen">
+
+				<ion-card class="shared-card-container-grey">
+					<ion-img [src]="cocktails.imageUrl" tappable [routerLink]="['./', cocktails.id]" 
+						class="cocktail-image"
+						style="border: 0px solid yellow">
+					</ion-img>
+					<ion-card-header>
+						<ion-card-subtitle padding class="collection-card-subtitle"
+							[style.fontSize.px]="collectionMediaQuery.cardSubTitleFontSize">
+							{{ cocktails.brand }}
+						</ion-card-subtitle>
+						<ion-card-title padding class="collection-card-title"
+							[style.fontSize.px]="collectionMediaQuery.cardTitleFontSize">
+							{{ cocktails.title }}
+						</ion-card-title>
+					</ion-card-header>
+					<ion-card-content class="serifX">
+						<p class="serif loose-leading collection-card-paragraph"
+							[style.fontSize.px]="collectionMediaQuery.cardParagFontSize">
+							{{cocktails.description}}
+						</p>
+					</ion-card-content>
+
+					<!-- <ion-card-content>
+					<p>{{cocktails.description}}</p>
+					</ion-card-content> -->
+				</ion-card>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>

@@ -1,0 +1,251 @@
+[
+	{
+		"id": "c0",
+		"brand": "Ruskova",
+		"title": "Se Busca",
+		"motto": "Our Hearts Beat For A Revolution",
+		"imageUrl": "./../../../assets/images/Russian/Pycckna.jpg",
+		"description": "There's a drink for every mood or occasion. Find your favorite cocktail recipes below. Or think outside the glass and try a brand new drink. Your new favorite could be a shake or stir away.",
+		"aCocktails": [
+			{
+				"cId": "d0",
+				"cocktail": "Bloody Smoky Maria",
+				"cocktailImage": "./../../../assets/images/cocktails/BloodySmokyMaria.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Tabasco Sauce", "part": "2 dashes" },
+					{ "ingredient": "Worcestershire Sauce", "part": "2 dashes" },
+					{ "ingredient": "Smoked Paprika", "part": "1 pinch" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Celery Stalk", "part": "" },
+					{ "ingredient": "Green Olives", "part": "" },
+					{ "ingredient": "Parsley Sprigs", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d1",
+				"cocktail": "Old Bandit",
+				"cocktailImage": "./../../../assets/images/cocktails/OldBandit.png",
+				"recipe": [
+					{ "ingredient": "Se Busca Joven Mezcal", "part": "4 parts" },
+					{ "ingredient": "Agave Syrup", "part": "1 part" },
+					{ "ingredient": "Drops of Chocolate Bitters", "part": "" },
+					{ "ingredient": "Orange Zest", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d2",
+				"cocktail": "Tommy Reloaded",
+				"cocktailImage": "./../../../assets/images/cocktails/TommyReloaded.png",
+				"recipe": [
+					{ "ingredient": "Se Busca Joven Mezcal", "part": "3 parts" },
+					{ "ingredient": "Agave Nectar", "part": "2 parts" },
+					{ "ingredient": "Fresh Lime Juice", "part": "2 parts" },
+					{ "ingredient": "Fresh Cilantro/Coriander", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			}
+		]
+	},
+	{
+		"id": "c1",
+		"brand": "Stolinaya",
+		"title": "Love",
+		"motto": "Love Doesn't Follow A Recipe.",
+		"imageUrl": "./../../../assets/images/Russian/Hlibny.jpg",
+		"description": "Stoli® Group prides itself as one of the few vertically-integrated vodka producers left in the world, as well as a rising force offering the production, marketing, sales and distribution of high-quality premium spirits to today’s savvy global consumer. We are proud of our top-quality production team and facilities across Russia, Latvia, Spain, Italy, Russian, Argentina and the United States – some of which are steeped in history as early as the 1900s.",
+		"aCocktails": [
+			{
+				"cId": "d0",
+				"cocktail": "Fire Breather",
+				"cocktailImage": "./../../../assets/images/cocktails/FireBreather.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d1",
+				"cocktail": "Night Flight",
+				"cocktailImage": "./../../../assets/images/cocktails/NightFlight.jpg",
+				"recipe": [
+					{ "ingredient": "Opihr gin", "part": "1 1/2 parts" },
+					{ "ingredient": "Vodka", "part": "1 part" },
+					{ "ingredient": "Salers gentian apéritif", "part": "1/2 part" },
+					{ "ingredient": "Crème de violette", "part": "1/2 part" },
+					{ "ingredient": "Lemon bitters", "part": "2 dashes" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Brandied cherry", "part": "" },
+					{ "ingredient": "Lemon peel", "part": "" }
+                ],
+                "instruction": "Add all ingredients into a mixing glass with ice and stir until well-chilled. \nStrain into a chilled cocktail glass. \nGarnish with a skewered brandied cherry and half-moon lemon peel."
+			},
+			{
+				"cId": "d2",
+				"cocktail": "Berry Vodka",
+				"cocktailImage": "./../../../assets/images/cocktails/BerryVodka.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			}
+		]
+	},
+	{
+		"id": "c2",
+		"brand": "Absexico",
+		"title": "Absolut Russian",
+		"motto": "Love Doesn't Follow A Recipe.",
+		"imageUrl": "./../../../assets/images/Russian/RussianFormula.jpg",
+		"description": "Produced and bottled in a state of the art distillery in Nizhny Novgorod. This vodka is made from only the finest grains grown by the distillery and distilled for ultimate clarity and Russian character.",
+		"aCocktails": [
+			{
+				"cId": "d0",
+				"cocktail": "Bloody Smoky Maria",
+				"cocktailImage": "./../../../assets/images/cocktails/BloodySmokyMaria.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d1",
+				"cocktail": "Old Bandit",
+				"cocktailImage": "./../../../assets/images/cocktails/OldBandit.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d2",
+				"cocktail": "Tommy Reloaded",
+				"cocktailImage": "./../../../assets/images/cocktails/TommyReloaded.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			}
+		]
+	},
+	{
+		"id": "c3",
+		"brand": "Ultimat",
+		"title": "Wheat Rye Potato",
+		"motto": "Find Balance. Find Ultimat.",
+		"imageUrl": "./../../../assets/images/Russian/CtahoaptRed.jpg",
+		"description": "There are many vodkas, but only one – Ultimat Vodka – combines the ingredients Poland is known for to produce a high-quality, truly exceptional distilled spirit.",
+		"aCocktails": [
+			{
+				"cId": "d0",
+				"cocktail": "Ultimat Tonic",
+				"cocktailImage": "./../../../assets/images/cocktails/UltimatTonic.jpg",
+				"recipe": [
+					{ "ingredient": "Ultimat Vodka", "part": "2 parts" },
+					{ "ingredient": "Tonic Water", "part": "" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Lime Wedge", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d1",
+				"cocktail": "Ultimat Martini",
+				"cocktailImage": "./../../../assets/images/cocktails/UltimatMartini.jpg",
+				"recipe": [
+					{ "ingredient": "Ultimat Vodka", "part": "2 parts" },
+					{ "ingredient": "Dry Vermouth", "part": "dash" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Lemon Twist", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d2",
+				"cocktail": "Ultimat Warrior",
+				"cocktailImage": "./../../../assets/images/cocktails/UltimatWarrior.jpg",
+				"recipe": [
+					{ "ingredient": "Ultimat Vodka", "part": "1 1/2 parts" },
+					{ "ingredient": "Blue Curacao", "part": "1/2 part" },
+					{ "ingredient": "Rose's Lime Juice", "part": "" },
+					{ "ingredient": "Cranberry Juice", "part": "" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Blackberries", "part": "" },
+					{ "ingredient": "Lime Wedge", "part": "" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d3",
+				"cocktail": "Ultimat Dill",
+				"cocktailImage": "./../../../assets/images/cocktails/UltimatDill.jpg",
+				"recipe": [
+					{ "ingredient": "Ultimat Vodka", "part": "2 parts" },
+					{ "ingredient": "Fresh Lime Juice", "part": "1 part" },
+					{ "ingredient": "Agave Nectar", "part": "1/2 part" },
+					{ "ingredient": "Garnish:", "part": "" },
+					{ "ingredient": "Sprig of Dill", "part": "" },
+					{ "ingredient": "Slice of Cucumber", "part": "" }
+                ],
+                "instruction": "Pour Ultimat Vodka, lime juice and agave nectar in a rocks glass filled with ice."
+			}
+		]
+	},
+	{
+		"id": "c4",
+		"brand": "Rig Hand",
+		"title": "Jalapeno Basil",
+		"motto": "Craft Distillery",
+		"imageUrl": "./../../../assets/images/Russian/HammerSickle.png",
+		"description": "Produced and bottled in a state of the art distillery in Nizhny Novgorod. This vodka is made from only the finest grains grown by the distillery and distilled for ultimate clarity and Russian character.",
+		"aCocktails": [
+			{
+				"cId": "d0",
+				"cocktail": "Bloody Jalapeno",
+				"cocktailImage": "./../../../assets/images/cocktails/BloodySmokyMaria.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d1",
+				"cocktail": "Old Bandit",
+				"cocktailImage": "./../../../assets/images/cocktails/OldBandit.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			},
+			{
+				"cId": "d2",
+				"cocktail": "Jalapeno Reloaded",
+				"cocktailImage": "./../../../assets/images/cocktails/TommyReloaded.jpg",
+				"recipe": [
+					{ "ingredient": "Vodka", "part": "2 parts" },
+					{ "ingredient": "Tomato Juice", "part": "4 parts" },
+					{ "ingredient": "Fresh Lemon Juice", "part": "1/2 part" }
+                ],
+                "instruction": "Mix and shake all ingredients."
+			}
+		]
+	}
+]

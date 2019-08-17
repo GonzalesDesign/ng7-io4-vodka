@@ -1,0 +1,78 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button defaultHref="/"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			<h3>Vodka Enthusiast: Contact Us</h3>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-grid class="gradBackground">
+
+		<ion-row>
+			<ion-col size-xs="12" size-md="8" offset-md="2" style="border: 0px solid">
+
+				<ion-card class="contact-card-bg">
+					<ion-card-content>
+						<ion-card-header class="ion-no-padding">
+							<ion-card-title class="contact-card-title">
+								Contact us
+							</ion-card-title>
+							<ion-card-subtitle class="contact-card-subtitle">
+								Feel free to drop us a line
+							</ion-card-subtitle>
+						</ion-card-header>
+						<p class="serif contact-card-paragraph">A well-crafted contact page will enhance user experience
+							and cultivate a strong relationship with your leads.</p>
+					</ion-card-content>
+
+					<ion-list>
+						<ion-list-header class="contact-list-header">Office Address:</ion-list-header>
+						<ion-item lines="noneX" padding-topX class="list-address">
+							{{ address.address }} <br>
+							{{ address.city }} <br>
+							{{ address.state }} <br>
+							{{ address.zip }}
+						</ion-item>
+
+						<ion-list-header class="contact-list-phone">Phone:</ion-list-header>
+						<ion-item lines="none" class="list-phone list-address">
+							{{ address.phone }}
+						</ion-item>
+
+						<!-- <ion-item lines="none" class="contact-list-phone">Phone: </ion-item>
+						<ion-item lines="noneX" padding-topX class="list-address">{{ address.phone }}</ion-item> -->
+
+						<p class="serif card-intro-paragraph" padding>Send us an email if you want to see more cocktails
+							or recommend brands that's not in our list. Thank you!</p>
+						<ion-button padding-leftX expand="fullX" text-uppercase class="email-button"
+							(click)="fOpenPopover($event)">Email Us
+						</ion-button>
+						<ion-icon ios="logo-facebook" md="logo-facebook" class="social-icon"></ion-icon>
+						<ion-icon name="logo-twitter" class="social-icon"></ion-icon>
+						<ion-icon name="logo-pinterest" class="social-icon"></ion-icon>
+
+
+						<!-- <ion-button padding-start expand="fullX" (click)=" fOpenPopover($event) " text-uppercase>Email Us</ion-button>
+							<ion-item lines="none"></ion-item> -->
+					</ion-list>
+				</ion-card>
+
+				<!-- <ion-button padding-leftX expand="fullX" text-uppercase class="email-button"
+					(click)="fOpenPopover($event)">Email Us
+				</ion-button> -->
+
+			</ion-col>
+		</ion-row>
+
+
+
+	</ion-grid>
+
+
+</ion-content>

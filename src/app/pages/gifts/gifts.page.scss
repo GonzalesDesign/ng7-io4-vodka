@@ -1,0 +1,81 @@
+/*--=| shared theme |=--*/
+@import "./../../../theme/shared-styles.scss";
+
+/*----=|GIFT BASKETS: GRADATION BACKGROUND |=----*/
+.gift-basket-content-container {
+	--background: linear-gradient( 180deg, var(--ion-color-medium-tint2), var(--ion-color-dark-shade) );
+}
+
+.gift-basket-header-card {
+	display: flex;
+	// flex-direction: row;
+	// flex-wrap: nowrap;
+	align-items: center;
+	// background: var(--ion-color-dark);
+	--background: linear-gradient( -90deg, var(--ion-color-dark-tint), var(--ion-color-dark-shade) );
+	border: 0px solid grey;
+
+	.gift-basket-header-container {
+		border: 0px solid rgb(148, 197, 13);
+		width: 65%;
+		background: rgba(0, 0, 0, 0);
+		border: 0px solid red;
+
+		.gift-basket-header-title {
+			@include fontFamilyWeightSize($fontMerriweather, 500, 2.5em, var(--ion-color-danger-shade));
+			border: 0px solid red;
+		}
+		.gift-basket-header-subtitle {
+			@include fontFamilyWeightSize($fontOpenSans, 600, 1.2em, var(--ion-color-medium));
+			text-transform: uppercase;
+			margin: 0px;
+			line-height: 1;
+			border: 0px solid red;
+		}
+		.gift-basket-header-description {
+			@include fontFamilyWeightSize($fontMerriweather, 500, 12px, var(--ion-color-medium));
+			border: 0px solid red;
+			// text-transform: uppercase;
+		}
+	}
+	.gift-basket-header-image {
+		width: 30%;
+		// align-self: flex-end;
+	}
+}
+
+.gift-basket-row {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid grey;
+	
+	.gift-basket-card-container {
+		background: white;
+		margin: 0px;
+		border: 0px solid grey;
+
+		.gift-basket-image {
+			
+		}
+		.gift-basket-title {
+			@include fontFamilyWeightSize($fontMerriweather, 500, 24px, var(--ion-color-danger-shade));
+		}
+		.gift-basket-subtitle {
+			@include fontFamilyWeightSize($fontOpenSans, 600, 12px, var(--ion-color-medium));
+			text-transform: uppercase;
+		}
+		.gift-basket-list-item {
+			width: 50%;
+			border: 0px solid grey;
+		}
+		.gift-basket-list-label {
+			@include fontFamilyWeightSize($fontOpenSans, 400, 1em, var(--ion-color-medium));
+			border: 0px solid grey;
+		}
+		.gift-basket-price {
+			@include fontFamilyWeightSize($fontMerriweather, 500, 1.6em, var(--ion-color-success));
+			border: 0px solid grey;
+		}
+	}
+}

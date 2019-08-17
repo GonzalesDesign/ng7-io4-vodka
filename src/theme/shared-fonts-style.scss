@@ -1,0 +1,70 @@
+/******************************************************
+* Component: Shared Font Style
+* Copyright © 2019 GonzalesDesign
+* Platform: Angular7/Ionic5
+* Updated: 19.07.26
+*******************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Ovo");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i");
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700&display=swap');
+
+/*---=| Shadows |=---*/
+$text-shadow: 1px 1px 0px rgba(rgb(104, 104, 104), 0.75);
+$text-light-shadow: 1px 1px 0px rgba(rgb(104, 104, 104), 0.25);
+$multistep-white-text-shadow: 0 0 #ffffff, 1px 1px #ffffff, 2px 2px #ffffff, 3px 3px rgb(249, 213, 174);
+.multistep-white-text-shadow {
+    text-shadow: $multistep-white-text-shadow;
+}
+
+/*---=| Shadow Mixin |=---*/
+@mixin shadowMixin($fontFam, $fontWt, $fontSz, $Color) {
+	font-family: $fontFam;
+	font-weight: $fontWt;
+	font-size: $fontSz;
+	color: $Color;
+	// to use: @include fontFamilyWeightSize ($rlg-primary-font, 600, 1em);
+}
+
+/*---=| Font Variables |=---*/
+$fontBarlow: "Barlow Condensed", sans-serif;
+$fontMuli: "Muli", sans-serif;
+$fontOvo: "Ovo", sans-serif;
+$fontOswald: "Oswald", sans-serif;
+$fontOpenSans: "Open Sans", sans-serif;
+$fontRoboto: 'Roboto', sans-serif;
+$fontRobotoCondensed: 'Roboto Condensed', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontHind: 'Hind', sans-serif;
+$fontCinzel: 'Cinzel', sans-serif;
+
+$fontRye: 'Rye', cursive;
+
+$fontMerriweather: "Merriweather", serif;
+$fontAlegreya: 'Alegreya', serif;
+$fontEBGaramond: 'EB Garamond', serif;
+
+
+
+/*---=| Font Mixin |=---*/
+@mixin fontFamilyWeightSize($fontFam, $fontWt, $fontSz, $Color) {
+	font-family: $fontFam;
+	font-weight: $fontWt;
+	font-size: $fontSz;
+	color: $Color;
+	// to use: @include fontFamilyWeightSize ($rlg-primary-font, 600, 1em);
+}

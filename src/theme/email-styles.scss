@@ -1,0 +1,49 @@
+/*--=| shared theme |=--*/
+@import './shared-styles.scss';
+
+
+.ion-card-container {
+    // width: 350px;
+    .ion-card-header-email-form {
+        border: 0px solid purple;
+        padding: 0px;
+
+        .ion-card-title-email-form {
+            border: 0px solid orange;
+            padding: 0px;
+        }
+    }
+
+    .item-container {
+        border: 0px solid grey;
+    }
+
+}
+
+
+.input-label {
+    @include fontFamilyWeightSize($fontMerriweather, 400, .85em, var(--ion-color-medium-shade));
+    border: 0px solid grey;
+}
+
+.input {
+    @include fontFamilyWeightSize($fontMerriweather, 400, 0.85em, var(--ion-color-medium-shade) );
+}
+
+.input-error {
+    color: var(--ion-color-danger)
+}
+
+// .ion-padding-start {
+//     padding: 50px;
+// }
+
+ion-inputX{
+    border-bottom: 1px solid red;
+    padding: 0px 20px 0px 20px;
+}
+
+ion-textarea {
+    @include fontFamilyWeightSize($fontOpenSans, 500, .85em, var(--ion-color-dark-tint));
+    // width: 400px;
+}

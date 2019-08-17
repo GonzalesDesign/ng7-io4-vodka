@@ -1,0 +1,23 @@
+<ion-content class="transparent-background">
+	<ion-grid fixedX class="gradBackgroundX grid-main-container">
+		<ion-row class="row-carousel-container" style="border: 0px solid purple;">
+			<ion-col size-xs="12" class="col-carousel-container">
+				<ion-card *ngFor="let aboutUs of aCarousel;" no-padding
+					class="card-carousel image-foregroundX sGradBackground-light"
+					style="border: 0px dashed red;">
+					<!-- <ion-label  position="floatingx" class="txt-over-img">Vodka</ion-label> -->
+					<ion-card-header class="carousel-header">
+						<ion-card-title class="title-over-img" [style.fontSize.vw]="titleFontSize">{{aboutUs.slideTitle}}</ion-card-title>
+						<ion-card-subtitle class="subtitle-over-img" [style.fontSize.vw]="subTitleFontSize">{{aboutUs.slideSubTitle}}</ion-card-subtitle>
+					</ion-card-header>
+					<!-- <ion-button [routerDirection]="'root'" [routerLink]="[aboutUs.slideImageUrl]">
+						Click me
+					</ion-button> -->
+					<!-- <ion-img src={{aboutUs.slideImageUrl}} class="image-foreground gradBackground-lightX" alt="cover image"></ion-img> -->
+					<!-- <ion-img  [style.backgroundImage]="'url('+ aboutUs.slideImageUrl +')'" class="image-foreground gradBackground-lightX"></ion-img> -->
+					<ion-img [src]="aboutUs.slideImageUrl" class="slider-image"></ion-img>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

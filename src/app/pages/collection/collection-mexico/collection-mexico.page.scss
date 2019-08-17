@@ -1,0 +1,164 @@
+
+/*--=| shared theme |=--*/
+@import './../../../../theme/shared-styles.scss';
+
+ion-content {
+	.intro-header-grid-container {
+		background: black;
+	}
+	
+	.intro-header-container {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.intro-header-card {
+		display: flex;
+		// flex-direction: row;
+		// flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		// background: var(--ion-color-dark);
+		// --background: linear-gradient( -90deg, var(--ion-color-dark-tint), var(--ion-color-dark-shade) );
+		border: 0px solid grey;
+	
+		.intro-header-card { 
+	
+		}
+			
+		.intro-header {
+			border: 0px solid rgb(148, 197, 13);
+			// width: 65%;
+			background: rgba(0, 0, 0, 0);
+			border: 0px solid red;
+	
+			.intro-header-title {
+				@include fontFamilyWeightSize($fontMerriweather, 500, 2.5em, var(--ion-color-danger-shade));
+				border: 0px solid red;
+			}
+			.intro-header-subtitle {
+				@include fontFamilyWeightSize($fontOpenSans, 600, 1.2em, var(--ion-color-medium));
+				text-transform: uppercase;
+				margin: 0px;
+				line-height: 1;
+				border: 0px solid red;
+			}
+			.intro-header-description {
+				@include fontFamilyWeightSize($fontMerriweather, 500, 12px, var(--ion-color-medium));
+				border: 0px solid red;
+				// text-transform: uppercase;
+			}
+		}
+	}
+		.intro-header-image-card {
+			margin: 0px;
+			padding: 0px;
+	
+			.intro-header-image {
+				width: 100%;
+				// align-self: flex-end;
+			}
+		}
+		
+	.card-bg-image-intro {
+		// --background: url('../../../../assets/images/SeBusca.png') no-repeat center center / cover;
+		background-image: url("../../../../assets/images/sebusca-cocktails/SeBuscaHeart.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: center;
+		// height: calc(300px - 1vw);
+		// content: "";
+		// display: block;
+		// position: absolute;
+		// opacity: 0.5;
+		// position: absolute;
+	}
+	div.card-intro-bg-trans-box {
+        // margin: 30px;
+        // height: calc(100% + 10vh);
+		// min-height: 30vh;
+		// height: calc(300px - 1vw);
+		background-color: var(--ion-color-success-shade2);
+		border: 0px solid black;
+		opacity: 0.9;
+		filter: alpha(opacity=90); /* For IE8 and earlier */
+		margin: 0 0 0 0;
+		padding: 20px 0 0 0;
+	}
+	.collection-card-intro {
+		background: white;
+		margin: 0px 20px 0 20px;
+		padding: 0px 0 0 0;
+		opacity: 0.9;
+		filter: alpha(opacity=90); /* For IE8 and earlier */
+	}
+    .card-intro-text {
+		// font-size: 2em;
+		color: white;
+        // color: var(--ion-color-warning-shade);
+		opacity: 1;
+	}
+	.card-intro-paragraph {
+		font-size: 1.2em;
+		text-align: center;
+		color: var(--ion-color-light);
+	}
+	.collection-intro-card-title {
+		@include fontFamilyWeightSize($fontMerriweather, 500, 32px, var(--ion-color-danger-shade));
+		@media screen and (max-width: 800px) {
+			font-size: calc(24px + 1vw);
+		}
+		text-align: center;
+		// text-shadow: $text-shadow;
+		border: 0px solid grey;
+	}
+	.collection-intro-card-subtitle {
+		@include fontFamilyWeightSize($fontOpenSans, 600, 22px, var(--ion-color-success-shade));
+		@media screen and (max-width: 800px) {
+			font-size: calc(12px + 1vw);
+			text-transform: uppercase;
+		}
+		text-align: center;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0px solid grey;
+	}
+	.collection-card-title {
+		@include fontFamilyWeightSize($fontMerriweather, 400, 1.6em, var(--ion-color-success-tint2));
+		// @media screen and (max-width: 800px) {
+		// 	font-size: calc(1.6em + 1vw);
+		// }
+		// text-transform: uppercase;
+		text-align: center;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		border: 0px solid grey;
+	}
+    .collection-card-subtitle {
+		@include fontFamilyWeightSize($fontOpenSans, 600, 1.2em, var(--ion-color-danger-tint2));
+		text-transform: uppercase;
+		text-align: center;
+		border: 0px solid grey;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.collection-card-paragraph {
+		@include fontFamilyWeightSize($fontMerriweather, 400, null, var(--ion-color-light-shade));
+		text-align: center;
+	}
+	
+	// .card-collection-subtitle {
+	// 	@include fontFamilyWeightSize($fontMerriweather, 300, 1.2em, var(--ion-color-medium-shade));
+	// }
+	// .card-collection-title {
+	// 	@include fontFamilyWeightSize($fontMerriweather, 300, 1.8em, var(--ion-color-light-shade));
+	// }
+	
+	// .card-collection-title {
+	// 	// @include fontFamilyWeightSize($fontMerriweather, 500, 1.2em, var(--ion-color-medium));
+	// }
+}
+// .white-text {
+// 	@include fontFamilyWeightSize($fontMerriweather, 500, 4em, var(--ion-color-light));
+// 	color: white; // var(--ion-color-light)
+// }

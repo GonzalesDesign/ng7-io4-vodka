@@ -1,0 +1,45 @@
+<ion-split-pane>
+	<ion-menu contentId="content" side="end" type="overlay"
+		style="border: 0px solid cyan;">
+		<ion-header>
+			<ion-toolbar color="danger">
+				<ion-icon slot="start" name="logo-ionic" style="color:orange; font-size: 2em;"
+					class="ion-padding-start"></ion-icon>
+				<ion-title>
+					<h3> Main Menu </h3>
+				</ion-title>
+			</ion-toolbar>
+		</ion-header>
+
+		<ion-content class="sidebar">
+			<ion-list>
+				<ion-menu-toggle slot="end" auto-hide="false" *ngFor="let sideMenu of aSideMenu">
+					<ion-item [routerDirection]="'root'" [routerLink]="[sideMenu.url]">
+						<ion-icon slot="end" [name]="sideMenu.icon" class="sidebar-icons"></ion-icon>
+						<ion-label class="sidebar-text">
+							{{sideMenu.menu}}
+						</ion-label>
+					</ion-item>
+					<ion-item *ngFor="let submenu of sideMenu.subMenu"  [routerDirection]="'root'" [routerLink]="[submenu.url]">
+						<ion-label class="sidebar-sub-text">{{submenu.menu}}</ion-label>
+					</ion-item>
+				</ion-menu-toggle>
+			</ion-list>
+
+			<div class="logo-section">
+				<div class="logo-section__wrapper" style="width: 70%; ">
+					<img [src]="sideMenuLogo.imgUrl" class="logo-section__logo"
+						[routerDirection]="'root'" [routerLink]="'/side-menu/gifts'"/>
+					<!-- <img class="logo-section__logo" src="./../../../assets/images/Bucherer.jpg" /> -->
+					<p class="logo-section__title" text-center style="color: aliceblue;">{{ sideMenuLogo.title }}</p>
+				</div>
+			</div>
+
+		</ion-content>
+
+	</ion-menu>
+	
+	<!-- <ion-router-outlet></ion-router-outlet> -->
+	<ion-router-outlet id="content" main></ion-router-outlet>
+
+</ion-split-pane>
